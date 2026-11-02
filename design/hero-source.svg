@@ -1,0 +1,42 @@
+<!-- EDITABLE SOURCE FILE FOR FIGMA / INKSCAPE / ILLUSTRATOR -->
+<!-- Nagendra Vannempalli (vpnnagendra-a11y) 3D Monogram & Hero Brand Kit -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 320" width="850" height="320">
+  <defs>
+    <linearGradient id="src-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070913"/>
+      <stop offset="50%" stop-color="#0D1322"/>
+      <stop offset="100%" stop-color="#0A0E1A"/>
+    </linearGradient>
+    <linearGradient id="src-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#00F5FF"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="src-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+
+  <g id="layer-canvas-background">
+    <rect width="850" height="320" rx="16" fill="url(#src-bg)" stroke="#1E293B" stroke-width="1.5"/>
+  </g>
+
+  <g id="layer-monogram-3d-shield" transform="translate(670, 160)">
+    <!-- Top Face -->
+    <polygon points="0,-75 65,-40 0,-5 -65,-40" fill="#1E293B" stroke="#38BDF8" stroke-width="1.8"/>
+    <!-- Left Face -->
+    <polygon points="-65,-40 0,-5 0,70 -65,35" fill="#0F172A" stroke="#38BDF8" stroke-width="1.8"/>
+    <!-- Right Face -->
+    <polygon points="0,-5 65,-40 65,35 0,70" fill="#0B1120" stroke="#A855F7" stroke-width="1.8"/>
+    <!-- Initials -->
+    <path d="M -48 18 L -48 -18 L -38 -13 L -22 22 L -22 -5 L -14 0 L -14 36 L -24 31 L -40 -4 L -40 23 Z" fill="url(#src-cyan)"/>
+    <path d="M 14 3 L 23 38 L 32 3 L 42 -2 L 28 53 L 18 53 L 5 8 Z" fill="url(#src-purple)"/>
+  </g>
+
+  <g id="layer-typography">
+    <text x="56" y="114" font-family="'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="900" fill="#F8FAFC">NAGENDRA VANNEMPALLI</text>
+    <text x="56" y="146" font-family="'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" fill="#38BDF8">Python AI Developer | Backend Engineer</text>
+  </g>
+</svg>

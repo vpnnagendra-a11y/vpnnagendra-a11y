@@ -1,0 +1,27 @@
+name: Refresh Profile Stats & Activity
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight UTC
+  workflow_dispatch: # Allows manual trigger from Actions tab
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify Profile Assets & Links Integrity
+        run: |
+          echo "Verifying local assets..."
+          test -f assets/animated-hero.svg || exit 1
+          test -f assets/animated-hero-mobile.svg || exit 1
+          test -f assets/hero-static.svg || exit 1
+          test -f assets/divider.svg || exit 1
+          echo "All core assets verified successfully."
+
+      - name: Keepalive Workflow
+        uses: gautamkrishnar/keepalive-workflow@v2

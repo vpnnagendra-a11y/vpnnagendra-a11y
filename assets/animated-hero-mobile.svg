@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070913"/>
+      <stop offset="50%" stop-color="#0D1322"/>
+      <stop offset="100%" stop-color="#0A0E1A"/>
+    </linearGradient>
+
+    <linearGradient id="cyberCyanM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#00F5FF"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+
+    <linearGradient id="neonPurpleM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <linearGradient id="goldAccentM" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
+    </linearGradient>
+
+    <radialGradient id="monogramGlowM" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#00F5FF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glowFilterM" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes floatMonogramM {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-5px) rotate(1.5deg); }
+      }
+      @keyframes orbitRingM {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes pulseGlowM {
+        0%, 100% { opacity: 0.4; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(1.08); }
+      }
+      @keyframes blinkDotM {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.2; }
+      }
+      .anim-monogram-m {
+        transform-origin: 240px 95px;
+        animation: floatMonogramM 6s ease-in-out infinite;
+      }
+      .orbit-m {
+        transform-origin: 240px 95px;
+        animation: orbitRingM 10s linear infinite;
+      }
+      .pulse-m {
+        transform-origin: 240px 95px;
+        animation: pulseGlowM 6s ease-in-out infinite;
+      }
+      .dot-m {
+        animation: blinkDotM 2s ease-in-out infinite;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .anim-monogram-m, .orbit-m, .pulse-m, .dot-m {
+          animation: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <rect width="480" height="380" rx="16" fill="url(#bgGradM)" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Top Ambient Glow -->
+  <circle class="pulse-m" cx="240" cy="95" r="90" fill="url(#monogramGlowM)"/>
+
+  <!-- Orbiting Rings -->
+  <g class="orbit-m">
+    <ellipse cx="240" cy="95" rx="76" ry="34" fill="none" stroke="#38BDF8" stroke-width="1.2" stroke-dasharray="6 8" opacity="0.6"/>
+    <circle cx="316" cy="95" r="3" fill="#00F5FF" filter="url(#glowFilterM)"/>
+  </g>
+
+  <!-- 3D Monogram -->
+  <g class="anim-monogram-m">
+    <!-- Top Face -->
+    <polygon points="240,45 285,68 240,92 195,68" fill="#1E293B" stroke="#38BDF8" stroke-width="1.6"/>
+    <polygon points="240,45 285,68 240,92 195,68" fill="url(#cyberCyanM)" opacity="0.2"/>
+
+    <!-- Left Face -->
+    <polygon points="195,68 240,92 240,140 195,116" fill="#0F172A" stroke="#38BDF8" stroke-width="1.6"/>
+    <polygon points="195,68 240,92 240,140 195,116" fill="url(#neonPurpleM)" opacity="0.25"/>
+
+    <!-- Right Face -->
+    <polygon points="240,92 285,68 285,116 240,140" fill="#0B1120" stroke="#A855F7" stroke-width="1.6"/>
+    <polygon points="240,92 285,68 285,116 240,140" fill="url(#cyberCyanM)" opacity="0.3"/>
+
+    <!-- Initials -->
+    <path d="M 206 107 L 206 83 L 213 87 L 225 110 L 225 92 L 230 96 L 230 119 L 223 116 L 212 93 L 212 110 Z" fill="url(#cyberCyanM)"/>
+    <path d="M 248 100 L 254 122 L 260 100 L 267 96 L 258 131 L 251 131 L 243 103 Z" fill="url(#neonPurpleM)"/>
+  </g>
+
+  <!-- Status Pill -->
+  <g transform="translate(140, 168)">
+    <rect x="0" y="0" width="200" height="24" rx="12" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+    <circle class="dot-m" cx="12" cy="12" r="4" fill="#10B981"/>
+    <text x="24" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#94A3B8" letter-spacing="0.3">
+      OPEN TO NEW ROLES
+    </text>
+  </g>
+
+  <!-- Name -->
+  <text x="240" y="224" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="900" fill="#F8FAFC" letter-spacing="-0.5">
+    NAGENDRA VANNEMPALLI
+  </text>
+
+  <!-- Title -->
+  <text x="240" y="250" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="700" fill="url(#goldAccentM)">
+    Python AI Developer | Backend Engineer
+  </text>
+
+  <!-- Bio summary -->
+  <text x="240" y="280" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#94A3B8">
+    FastAPI • MySQL Pipelines • Scikit-learn • GenAI
+  </text>
+
+  <!-- Mobile Metric Badges -->
+  <g transform="translate(40, 312)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="124" height="32" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
+      <text x="12" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#38BDF8">R² &gt; 0.85</text>
+      <text x="64" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748B">ML Fit</text>
+    </g>
+
+    <g transform="translate(136, 0)">
+      <rect x="0" y="0" width="134" height="32" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
+      <text x="10" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#A855F7">+30% Speed</text>
+      <text x="80" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748B">SQL</text>
+    </g>
+
+    <g transform="translate(282, 0)">
+      <rect x="0" y="0" width="118" height="32" rx="6" fill="#0B132B" stroke="#1E293B" stroke-width="1"/>
+      <text x="10" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#10B981">Bengaluru</text>
+      <text x="74" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#64748B">India</text>
+    </g>
+  </g>
+</svg>
