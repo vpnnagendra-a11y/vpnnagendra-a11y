@@ -33,3 +33,4 @@
   <line x1="0" y1="8" x2="850" y2="8" stroke="url(#dividerGrad)" stroke-width="1.5"/>
   <circle class="laser-spark" cx="50" cy="8" r="4.5" fill="url(#laserNode)"/>
 </svg>
+

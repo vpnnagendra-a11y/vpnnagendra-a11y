@@ -4,9 +4,22 @@ This guide provides instructions to finalize your GitHub profile setup, configur
 
 ---
 
-## 1. GitHub Account Settings Configuration
+## 1. GitHub Account Settings & Profile Photo Configuration
 
-Navigate to **[GitHub Settings &rarr; Public Profile](https://github.com/settings/profile)** and update these fields:
+### A. Setting Your Profile Avatar
+GitHub does not permit 3rd-party bots or automated tools to change account profile photos via the API for security reasons. Your cropped high-resolution headshot has been saved directly to your Desktop and in this repository:
+
+1. Open **[GitHub Profile Settings](https://github.com/settings/profile)** in your browser.
+2. In the **Profile picture** section on the top right, click **Edit** &rarr; **Upload a photo...**.
+3. Select the photo saved on your Desktop:
+   `c:\Users\vpnna\OneDrive\Desktop\github-profile-photo.jpg`
+4. Adjust the circular crop if desired and click **Set new profile picture**.
+
+---
+
+### B. Account Metadata Settings
+
+On the same **[GitHub Settings &rarr; Public Profile](https://github.com/settings/profile)** page, fill out these fields:
 
 | Field | Recommended Value | Why |
 | :--- | :--- | :--- |
@@ -62,3 +75,4 @@ git push origin main
 | **Working Links** | ✅ **PASS** | Portfolio link points to `job-nex-project2`, LinkedIn points to `linkedin.com/in/nagendra-vannempalli`, Email points to `mailto:vpnnagendra@gmail.com`. |
 | **Verified Information** | ✅ **PASS** | Uses strictly real experience metrics (R² &gt; 0.85, 30% pipeline speedup, 40% query throughput, 20+ scripts at Algonex IT Solutions). Zero fabricated awards or skills. |
 | **GitHub Actions Automation** | ✅ **PASS** | `.github/workflows/profile-stats.yml` created with daily cron schedule and asset integrity checks. |
+
