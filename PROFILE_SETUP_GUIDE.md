@@ -4,22 +4,9 @@ This guide provides instructions to finalize your GitHub profile setup, configur
 
 ---
 
-## 1. GitHub Account Settings & Profile Photo Configuration
+## 1. GitHub Account Settings Configuration
 
-### A. Setting Your Profile Avatar
-GitHub does not permit 3rd-party bots or automated tools to change account profile photos via the API for security reasons. Your cropped high-resolution headshot has been saved directly to your Desktop and in this repository:
-
-1. Open **[GitHub Profile Settings](https://github.com/settings/profile)** in your browser.
-2. In the **Profile picture** section on the top right, click **Edit** &rarr; **Upload a photo...**.
-3. Select the photo saved on your Desktop:
-   `c:\Users\vpnna\OneDrive\Desktop\github-profile-photo.jpg`
-4. Adjust the circular crop if desired and click **Set new profile picture**.
-
----
-
-### B. Account Metadata Settings
-
-On the same **[GitHub Settings &rarr; Public Profile](https://github.com/settings/profile)** page, fill out these fields:
+Navigate to **[GitHub Settings &rarr; Public Profile](https://github.com/settings/profile)** and update these fields:
 
 | Field | Recommended Value | Why |
 | :--- | :--- | :--- |

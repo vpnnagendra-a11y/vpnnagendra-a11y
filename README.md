@@ -9,14 +9,7 @@
     </picture>
   </a>
 
-  <br/><br/>
-
-  <!-- Circular Profile Headshot with Cyber Neon Glow Ring -->
-  <a href="https://www.linkedin.com/in/nagendra-vannempalli" title="Nagendra Vannempalli">
-    <img src="assets/avatar.svg" alt="Nagendra Vannempalli Headshot" width="135" height="135" />
-  </a>
-
-  <br/><br/>
+  <br/>
 
   <!-- Interactive Quick-Action Action Bar -->
   <p align="center">
